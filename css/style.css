@@ -18,6 +18,34 @@ html, body{
 body{
 	background:#FFFFFF;
 }
+
+.carousel-control     		 { width:  4%; }
+.carousel-control.left,.carousel-control.right {margin-left:15px;background-image:none;}
+@media (max-width: 767px) {
+    .carousel-inner .active.left { left: -100%; }
+    .carousel-inner .next        { left:  100%; }
+    .carousel-inner .prev		 { left: -100%; }
+    .active > div { display:none; }
+    .active > div:first-child { display:block; }
+
+}
+@media (min-width: 767px) and (max-width: 992px ) {
+    .carousel-inner .active.left { left: -50%; }
+    .carousel-inner .next        { left:  50%; }
+    .carousel-inner .prev		 { left: -50%; }
+    .active > div { display:none; }
+    .active > div:first-child { display:block; }
+    .active > div:first-child + div { display:block; }
+}
+@media (min-width: 992px ) {
+    .carousel-inner .active.left { left: -16.7%; }
+    .carousel-inner .next        { left:  16.7%; }
+    .carousel-inner .prev		 { left: -16.7%; }
+}
+
+
+
+
 .banner{
 	background: url(../images/image1.gif) no-repeat 0px 0px;
     background-size: cover;
@@ -203,6 +231,18 @@ body{
 /*-- introduction --*/
 .introduction,.about,.gallery,.team-dot,.news,.contact{
 	padding:4em 0;
+}
+
+.introduction {
+    background-color: #212121;
+}
+
+.introduction .w3l-heading h3 {
+    color: whitesmoke;
+}
+
+.introduction .w3ls-border {
+    background-color: whitesmoke;
 }
 .w3l-heading h3{
     text-align: center;
