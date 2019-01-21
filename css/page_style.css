@@ -1,0 +1,35 @@
+#otherheader {
+    margin: 0 0 0 0;
+    padding-bottom: 1em;
+    background: black;
+}
+
+.gallery, .news, .contact{
+    padding-top: 230px;
+    background: #212121;
+}
+
+.w3l-heading h3 {
+    color: white;
+}
+
+.w3ls-border {
+    background: #dab35c;
+}
+
+.nav-tabs > li > a {
+    color: #fff;
+    border: solid 2px whitesmoke;
+}
+
+.matify-div {
+    padding-top: 2em;
+    background-color: black;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+#team {
+    padding-top: 184px;
+}
